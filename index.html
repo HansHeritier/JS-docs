@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Quizz</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:500,600"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="flexLeft">
+        <img
+          class="logo"
+          src="https://cdn.glitch.global/2abbc8a7-1a8e-49dd-8218-43bd15b05597/Docs.png?v=1676469857251"
+          alt="logo docs"
+        />
+        <h1>JS Docs</h1>
+        </div>
+      <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder=" Search..">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+      <nav>
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle" />
+        <div class="flexRight">
+          <a href="#1">Les Bases</a>
+          <a href="#2">Tableaux Objets</a>
+          <a href="#3">Fonctions Avancées</a>
+          <button class="button" role="button">Info</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Checkboc -->
+
+    <main>
+      <section class="contenerLeft">
+        <aside>
+         <a href="#1"><h2>
+            Les Bases
+           </h2></a>
+          <h4 class="grey">Déclaration / Initialisation</h4>
+          <h4>Assignation</h4>
+          <h4 class="grey">Pop-up</h4>
+          <h4>Affichage Console</h4>
+          <h4 class="grey">Concaténation</h4>
+          <h4>Interpolation</h4>
+          <h4 class="grey">Comparaison</h4>
+          <h4>Condition</h4>
+          <h4 class="grey">Opérateurs logiques</h4>
+          <h4>Loop while</h4>
+          <h4 class="grey">Loop for</h4>
+          <a href="#2"><h2>
+            Les Tableaux et Objets
+          </h2></a>
+          <h4>Array</h4>
+          <h4 class="grey">Push</h4>
+          <h4>Unshift</h4>
+          <h4 class="grey">Nombre valeur Array</h4>
+          <h4>Affichage fenêtre</h4>
+          <h4 class="grey">Affichage Tableau console</h4>
+          <h4>Tableau multidimensionnel</h4>
+          <h4 class="grey">Affichage</h4>
+          <h4>Objet</h4>
+          <h4 class="grey">Interpolation</h4>
+          <a href="#3"><h2>
+            Les Fonctions Avancées
+            </h2></a>
+          <h4>Manipulation de DOM</h4>
+          <h4 class="grey">Manipulation de DOM</h4>
+          <h4>Manipulation de DOM</h4>
+          <h4 class="grey">Manipulation de DOM</h4>
+          <h4>Manipulation de DOM</h4>
+        </aside>
+      </section>
+
+      <!---->
+
+      <section class="contener">
+          <h2 id="1">
+            Les Bases :
+          </h2>
+        <article>
+          <h3>Déclaration / Initialisation</h3>
+          <p>Fonction : Créer une variable</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>
+                    var<br />
+                    let<br />
+                    const<br />
+                  </p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    var maVariable<br />
+                    let maVariable<br />
+                    const maVariable<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Assignation</h3>
+          <p>Fonction : Donner une valeur à une variable</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>=<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>var maVariable = /* la valeur de ma variable */<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Pop-up</h3>
+          <p>Fonction : Afficher fenêtre une pop up</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>prompt<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>var maVariable = prompt (“ ici ma question ”)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Affichage Console</h3>
+          <p>Fonction : Afficher dans la console</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>console.log()<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>console.log (maVariable)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Concaténation</h3>
+          <p>
+            Fonction : Chaîne de caractère contenant différente valeur ajoutée
+          </p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>“ “ + “ “<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    “ La valeur de ce présent est “ + maVariable + “
+                    inestimable“<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Interpolation</h3>
+          <p>Chaîne de caractère contenant différente valeur ajoutée</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>‘ $ {} ’<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>‘ La valeur de ce présent est ${ maVariable } ’<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Comparaison</h3>
+          <p>Fonction : Comparer 2 objets ou 2 variables</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>
+                    === strictement égale<br />
+                    !== différent de<br />
+                    &lt; + petit &lt;= + petit ou =<br />
+                    &gt; + grand &gt;= + grand ou =<br />
+                  </p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>maVar === maVar<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Condition</h3>
+          <p>Fonction : Conditionner une fonction selon les paramètre défini</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>
+                    si if ( ) { }<br />
+                    alors else { }<br />
+                    ou if ( ) { }<br />
+                    else if { }<br />
+                  </p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    if (condition) { Code à exécuter si renvoi true }<br />
+                    else if (condition) { Code à exécuter}<br />
+                    else { Code à exécuter }<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Opérateurs logiques</h3>
+          <p>
+            Fonction : Conditionner ou nuancer une fonction selon plusieurs
+            paramètres
+          </p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>
+                    ou || <br />
+                    et && <br />
+                  </p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    conditionA || conditionB<br />
+                    conditionA && conditionB<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Loop while</h3>
+          <p>Fonction : Exécuter un code en boucle selon une condition</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>Tant que while ( ) { }</p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    let maVariable /*Expression initiale*/<br />
+                    while (condition à remplir) {<br />
+                    /*code à exécuter*/ <br />
+                    /* expr mis à jour (incré ou décré)*/ }<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Loop for</h3>
+          <p>Fonction : Exécuter un code en boucle selon une condition</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>Pour for ( ; ; ) { }<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    for (expression initiale ;<br />
+                    condition ;<br />
+                    expression mis à jour) {<br />
+                    /* code à exécuter */ }<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+                  <h2 id="2">
+            Les Tableaux et Objets :
+          </h2>
+        <article>
+          <h3>Array</h3>
+          <p>Fonction : Stocker des données</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>[ “ “ , “ “ ] <br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    let monTableau =<br />
+                    [ “valeur0“ , “valeur1“ , ”valeur2“ ] <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Push</h3>
+          <p>Fonction : Ajouter une donnée à la fin de monTableau</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>var.push(valeur)<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>monTableau.push(valeur)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Unshift</h3>
+          <p>Fonction : Ajouter une donnée en début de monTableau</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>var.unshift(valeur)<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>monTableau.unshift(valeur)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Nombre valeur Array</h3>
+          <p>Fonction : Afficher la valeur dans un tableau</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>.length<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>console.log(monTableau.length)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Affichage fenêtre</h3>
+          <p>Fonction : Ouvrir une fenêtre pour afficher une valeur</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>window.alert(var)<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>window.alert(monTableau)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Affichage Tableau console</h3>
+          <p>Fonction : Ouvrir le tableau par sa variable dans la console</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>console.table(var)<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>console.table(monTableau)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Tableau multidimensionnel</h3>
+          <p>Tableau dans un tableau…</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>[ [ “ ” , ” ” ], “ ” , “ ” ]<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    let x= [<br />
+                    [["Livre", "Boukin"],"dates","mort"],<br />
+                    [["Livre", "Boukin"],"dates","mort"],<br />
+                    [["Livre", "Boukin"],"dates","mort"]]<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Affichage</h3>
+          <p>Fonction : Afficher quelque chose sur sa page</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>alert () ;<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>alert (maVariable) ;<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Objet</h3>
+          <p>Fonction : Stocker des données ( chaîne de caractère, nombre )</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>{}<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>Let monObjet {prix : 10, taille: 40}<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Interpolation</h3>
+          <p>
+            Fonction : Créer une chaîne de caractère ( string )en y insérant une
+            ou des variables (code, caractère…)
+          </p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>
+                    `${}`<br />
+                    Guillemets alt + 2 fois touche 7
+                  </p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>( la valeur de ma variable est `${maVariable}`)<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+                  <h2 id="3">
+            Les Fonctions Avancées :
+          </h2>
+        <article>
+          <h3>Manipulation de DOM</h3>
+          <p>Fonction : Supprimer un élément dans CSS</p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>.css<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>
+                    $ (“.class”).css <br />( {“background-color”: #F504735 ,} )
+                    ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Manipulation de DOM</h3>
+          <p>
+            Fonction : Remplacer un élément cibler dans notre html par un txt
+            définit en JS
+          </p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>.text<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>$ (‘.class’).text ( maVariable ) ;<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Manipulation de DOM</h3>
+          <p>
+            Fonction : Remplacer un élément au début de l’objet dans notre html
+            par un txt définit en JS
+          </p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>.prepend<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>$ (‘.class’).prepend ( maVariable ) ;<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Manipulation de DOM</h3>
+          <p>
+            Fonction : Remplacer un élément à la fin de l’objet dans notre html
+            par un txt définit en JS
+          </p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>.append<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>$ (‘.class’).append ( maVariable ) ;<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3>Manipulation de DOM</h3>
+          <p>
+            Fonction : Supprimer un élément dans l’objet dans notre html par un
+            txt définit en JS
+          </p>
+          <div class="box">
+            <div class="one">
+              <div class="two">
+                <h4>i</h4>
+              </div>
+            </div>
+            <div class="textbox">
+              <div class="textboxone">
+                <div class="textboxtwo">
+                  <h5>Opérateur :</h5>
+                  <p>.remove<br /></p>
+                </div>
+                <div class="textboxtwo">
+                  <h5>Syntaxe :</h5>
+                  <p>$ (‘.class’).remove ( maVariable ) ;<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      </main>
+      <!---->
+
+  <footer>
+  <section class="box1">
+   <div class="items">
+       <img
+    class="logo"
+    src="https://cdn.glitch.global/2abbc8a7-1a8e-49dd-8218-43bd15b05597/Docs.png?v=1676469857251"
+    alt="logo docs"
+  />
+    </div> 
+    <div class="items">
+         <a href="#1">
+      Les Bases
+    </a>
+    </div> 
+       <div class="items">
+          <a href="#2">
+      Les Tableaux et Objets
+    </a>
+    </div> 
+       <div class="items">
+          <a  href="#3">
+            Les fonctions avancées
+          </a>
+    </div> 
+    </section>    
+  <section class="copy">
+    <div>
+      <p>
+      Propulsé par Hans HERITIER  
+      </p>
+    </div>
+    </section>  
+      
+  </footer>    
+      
+      <!---->
+    
+  </body>
+</html>
